@@ -30,7 +30,7 @@ jobs:
     if: ${{ github.head_ref != 'master' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: hmarr/debug-action@v2.0.1
+      - uses: hmarr/debug-action@v2.1.0
 
       - name: Extract branch name on direct push to a branch
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/')
